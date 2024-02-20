@@ -3,5 +3,5 @@
 set -e
 set -o pipefail
 
-wget -qO- https://raw.githubusercontent.com/lbianchi-lbl/notebooks-ci/main/install-quarto.sh | bash -s
+wget --quiet --output-document=- https://raw.githubusercontent.com/lbianchi-lbl/notebooks-ci/main/install-quarto.sh | bash -s
 quarto render split_comparisons.ipynb --to html -M self-contained:true --execute
