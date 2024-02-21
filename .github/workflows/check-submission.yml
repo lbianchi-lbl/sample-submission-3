@@ -9,5 +9,5 @@ jobs:
     with:
       repository: ${{ github.repository }}
       ref: ${{ github.sha }}
-      reproducible-document: split_comparisons.ipynb
       binder-cache-branch: binder-cache
+      build-artifacts: split_comparisons.html
